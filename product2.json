@@ -1,0 +1,154 @@
+[
+  {
+    "id": 514,
+    "brand": "marcelle",
+    "name": "Marcelle Quad Bronzer Sunkissed",
+    "price": "19.99",
+    "price_sign": null,
+    "currency": null,
+    "image_link": "https://d3t32hsnjxo7q6.cloudfront.net/i/f15f238ecfe181067f7b6158ade61f6e_ra,w158,h184_pa,w158,h184.jpg",
+    "product_link": "https://well.ca/products/marcelle-quad-bronzer-sunkissed_120876.html",
+    "website_link": "https://well.ca",
+    "description": "Use the Marcelle Quad Bronzer for the perfect shimmery finish.This unique, shimmery formula, enriched with Aloe Vera, comes in a quad of 4 different shades that can be blended together to get a sun-kissed glow all year long. Use the lighter shades separately for a hint of bronze or the darker shades for a stronger tan.You can also use it to play with face sculpting and contouring effects to play up your best features.",
+    "rating": null,
+    "category": null,
+    "product_type": "bronzer",
+    "tag_list": [
+      "Canadian"
+    ],
+    "created_at": "2016-10-01T18:36:42.548Z",
+    "updated_at": "2017-12-23T21:08:53.214Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/514.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/514/original/data?1514063333",
+    "product_colors": [
+      {
+        "hex_value": "#C49D88",
+        "colour_name": null
+      },
+      {
+        "hex_value": "#AA8475",
+        "colour_name": null
+      },
+      {
+        "hex_value": "#A78371",
+        "colour_name": null
+      }
+    ]
+  },
+  {
+    "id": 507,
+    "brand": null,
+    "name": "Saint Cosmetics Bronzer",
+    "price": "30.96",
+    "price_sign": null,
+    "currency": null,
+    "image_link": "https://d3t32hsnjxo7q6.cloudfront.net/i/4f8578c9a7588249e95d463078b84de1_ra,w158,h184_pa,w158,h184.jpg",
+    "product_link": "https://well.ca/products/saint-cosmetics-bronzer_116816.html",
+    "website_link": "https://well.ca",
+    "description": "Saint Cosmetics' velvety smooth bronzing formulation gives the skin a soft, healthy and naturally radiant skin.Features:Comes in a range of shades to enhance all complexionsLong- lastingProvides skin with a sun-kissed healthy glowMade in Canada from naturally derived ingredientsChemical Free, Vegan, Gluten Free",
+    "rating": null,
+    "category": null,
+    "product_type": "bronzer",
+    "tag_list": [
+      "Natural",
+      "Vegan",
+      "Gluten Free",
+      "Canadian"
+    ],
+    "created_at": "2016-10-01T18:36:30.602Z",
+    "updated_at": "2017-12-23T21:08:52.329Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/507.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/507/original/data?1514063332",
+    "product_colors": [
+      {
+        "hex_value": "#B77C59",
+        "colour_name": "Glowing Halo "
+      },
+      {
+        "hex_value": "#B98963",
+        "colour_name": "On Cloud 9 "
+      }
+    ]
+  },
+  {
+    "id": 506,
+    "brand": "marcelle",
+    "name": "Marcelle Monochromatic Bronzer",
+    "price": "19.99",
+    "price_sign": null,
+    "currency": null,
+    "image_link": "https://d3t32hsnjxo7q6.cloudfront.net/i/1f2cd5b946f5e1d5bea2a7a7273c6fa4_ra,w158,h184_pa,w158,h184.jpg",
+    "product_link": "https://well.ca/products/marcelle-monochromatic-bronzer_94564.html",
+    "website_link": "https://well.ca",
+    "description": "\n        Marcelle Monochromatic Bronzer gives you a touch of sun for a radiant complexion!\nEnjoy a sun-kissed complexion all year long without experiencing the \nsun's harmful effects! Marcelle's versatile bronzer let you choose your\n how you want to look: enjoy the look of a luminous bronze goddess or a \nmore natural healthy looking complexion. Let your beauty glow with \nMarcelle's hypoallergenic and perfume-free bronzer!\nWithout preservatives or parabens.    ",
+    "rating": null,
+    "category": null,
+    "product_type": "bronzer",
+    "tag_list": [
+      "Canadian"
+    ],
+    "created_at": "2016-10-01T18:36:29.496Z",
+    "updated_at": "2017-12-23T21:08:52.232Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/506.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/506/original/data?1514063332",
+    "product_colors": [
+      {
+        "hex_value": "#A27B67",
+        "colour_name": null
+      }
+    ]
+  },
+  {
+    "id": 490,
+    "brand": null,
+    "name": "Earth Lab Loose Mineral Bronzer",
+    "price": "24.0",
+    "price_sign": null,
+    "currency": null,
+    "image_link": "https://d3t32hsnjxo7q6.cloudfront.net/i/df8c3964f9e20d2906eb065a877c4322_ra,w158,h184_pa,w158,h184.jpeg",
+    "product_link": "https://well.ca/products/earth-lab-loose-mineral-bronzer_78790.html",
+    "website_link": "https://well.ca",
+    "description": "Earth Lab Loose Mineral Bronzer sets softly on your skin \n\t\t\tfor a very natural look. It offers a sun kissed glow \n\t\t\twithout being too orange like some other bronzers. This bronze does not have any additives or fillers so you'll use less than \n\t\t\tthe size of a dime for your entire face! What look do you go for: the natural bronzed babe, tropical brights, or classic beauty? Try all three with this get the look with natural makeup piece found on our blog, The Well! Ingredients: Mica and Iron oxidesMay Contain: ultra marine blue, Titanium dioxideBottom Label:",
+    "rating": 5,
+    "category": null,
+    "product_type": "bronzer",
+    "tag_list": [
+      "Canadian",
+      "Natural"
+    ],
+    "created_at": "2016-10-01T18:36:08.383Z",
+    "updated_at": "2017-12-23T21:08:25.049Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/490.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/490/original/data?1514063305",
+    "product_colors": []
+  },
+  {
+    "id": 481,
+    "brand": "pure anada",
+    "name": "Pure Anada Loose Mineral Luminous Bronzer",
+    "price": "12.0",
+    "price_sign": null,
+    "currency": null,
+    "image_link": "https://d3t32hsnjxo7q6.cloudfront.net/i/01195de6de1092125f703c5662d99af9_ra,w158,h184_pa,w158,h184.jpeg",
+    "product_link": "https://well.ca/products/pure-anada-loose-mineral-luminous_93637.html",
+    "website_link": "https://well.ca",
+    "description": "Impart a healthy glow, with a Pure Anada luminous mineral bronzer!Shade Range:Ingredients: Mica,  Iron Oxides, Ultramarines, May contain: Titanium Dioxide",
+    "rating": 5,
+    "category": null,
+    "product_type": "bronzer",
+    "tag_list": [
+      "Canadian",
+      "Natural"
+    ],
+    "created_at": "2016-10-01T18:35:50.126Z",
+    "updated_at": "2017-12-23T21:08:49.114Z",
+    "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/481.json",
+    "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/481/original/data?1514063329",
+    "product_colors": [
+      {
+        "hex_value": "#FFFFFF",
+        "colour_name": "Earth "
+      }
+    ]
+  }
+]
