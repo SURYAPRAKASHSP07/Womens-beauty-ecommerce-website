@@ -34,7 +34,7 @@ async function fetchBlushdata() {
 
             <p class="productBrand" style="text-transform: uppercase;font-weight: bold;margin-top:-15px;">${product.brand}</p>
 
-            <p id="productName" class="productName text-primary font-monospace fs-6" style="margin-top:-15px">${product.name}</p>
+            <p id="productName" class="productName text-primary font-monospace fs-6" style="margin-top:-15px">${name}</p>
 
            <div class="price" style="margin-top: -20px;">
             <span class="productPrice fs-6 text-secondary me-2 fs-4">$. ${product.price}</span>
@@ -60,6 +60,7 @@ async function bronzerCardsData() {
    const data = await res.json();
    let output = "";
    data.forEach((product) => {
+      const name = product.name.length == 15 ? product.name : product.name + "...";
       output += `
       <div class="card">
         <i class="favHeart fa-regular fa-heart " data-id="${product.id}"></i>
@@ -70,7 +71,7 @@ async function bronzerCardsData() {
             <p class="productBrand" style="text-transform: uppercase;font-weight: bold;margin-top:-10px;">${product.brand} </p>
 
             <p id="productName" class="productName text-primary font-monospace fs-6" style="margin-top:-15px">
-               ${product.name}
+               ${name}
             </p>
 
             <div class="price" style="margin-top: -20px;">
@@ -94,11 +95,12 @@ async function eyelinerFetch() {
    const data = await res.json();
    let output = "";
    data.forEach((product) => {
+      const name = product.name.length == 15 ? product.name : product.name + "...";
       output += `
         <div class="card">
         <i class="favHeart fa-regular fa-heart " data-id="${product.id}"></i>
          <span class="discountPercentage">35% OFF</span>
-         <img src="${product.image_link}" alt="${product.name}">
+         <img src="${product.image_link}" alt="${name}">
          <div class="card-body">
             <p class="productBrand" style="text-transform: uppercase;font-weight: bold;margin-top:-15px;">${product.brand}</p>
 
