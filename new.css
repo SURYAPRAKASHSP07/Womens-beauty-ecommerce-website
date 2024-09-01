@@ -240,6 +240,7 @@ body{
         .card{
             height: 300px;
             width: 130px;
+            position: absolute;
 
             .discountPercentage{
                 font-size: 10px;
