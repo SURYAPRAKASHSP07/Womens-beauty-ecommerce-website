@@ -21,13 +21,14 @@ async function fetchBlushdata() {
    const data = await res.json();
    let output = "";
    data.forEach((product) => {
+      const name = product.name.length == 15 ? product.name : product.name + "...";
       output += `
         <div class="card">
         <i class="favHeart fa-regular fa-heart " data-id="${product.id}"></i>
 
          <span class="discountPercentage">${product.discount_percentage}</span>
 
-         <img src="${product.image_link}" alt="${product.name}">
+         <img src="${product.image_link}" alt="${name}">
 
          <div class="card-body">
 
