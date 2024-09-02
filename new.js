@@ -21,7 +21,7 @@ async function fetchBlushdata() {
    const data = await res.json();
    let output = "";
    data.forEach((product) => {
-      const maxLength = 10;
+      const maxLength = 15;
       let name = product.name;
       let brand = product.brand;
       if (name.length > maxLength || brand.length > maxLength) {
@@ -46,6 +46,9 @@ async function fetchBlushdata() {
             <span class="productPrice">$. ${product.price}</span>
             <span class="actualPrice"> $.${product.actual_price}</span>
            </div>
+           <div class="reviews">
+           <p class="rating">★★★★</p><span class="revi">(46 Reviews)</span>
+           </div>
 
            <button class="cartBtn">Add to cart</button>
          </div>
@@ -64,7 +67,7 @@ async function bronzerCardsData() {
    const data = await res.json();
    let output = "";
    data.forEach((product) => {
-      const maxLength = 10;
+      const maxLength = 15;
       let name = product.name;
       if (name.length > maxLength) {
          name = name.substring(0, maxLength) + '...';
@@ -84,8 +87,11 @@ async function bronzerCardsData() {
 
             <div class="price">
                <span class="productPrice">$.${product.price}</span>
-               <span class="actualPrice">$. 25.00</span>
+               <span class="actualPrice">$.25.00</span>
             </div>
+            <div class="reviews">
+           <p class="rating">★★★★</p><span class="revi">(46 Reviews)</span>
+           </div>
 
             <button class="cartBtn">Add to cart</button>
          </div>
@@ -103,7 +109,7 @@ async function eyelinerFetch() {
    const data = await res.json();
    let output = "";
    data.forEach((product) => {
-      const maxLength = 10;
+      const maxLength = 15;
       let name = product.name;
       if (name.length > maxLength) {
          name = name.substring(0, maxLength) + '...';
@@ -122,8 +128,11 @@ async function eyelinerFetch() {
             <p id="productName" class="productName">${name}</p>
 
            <div class="price">
-            <span class="productPrice">$. ${product.price}</span>
-            <span class="actualPrice"> $. 15.00</span>
+            <span class="productPrice">$.${product.price}</span>
+            <span class="actualPrice">$.15.00</span>
+           </div>
+           <div class="reviews">
+           <p class="rating">★★★★</p><span class="revi">(46 Reviews)</span>
            </div>
 
            <button class="cartBtn">Add to cart</button>
