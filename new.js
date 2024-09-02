@@ -21,29 +21,33 @@ async function fetchBlushdata() {
    const data = await res.json();
    let output = "";
    data.forEach((product) => {
-      const name = product.name.length == 15 ? product.name : product.name + "...";
+      const maxLength = 10;
+      let name = product.name;
+      let brand = product.brand;
+      if (name.length > maxLength || brand.length > maxLength) {
+         name = name.substring(0, maxLength) + '...';
+         brand = brand.substring(0, maxLength) + '...';
+      }
+
       output += `
-        <div class="card">
+      <div class="card">
         <i class="favHeart fa-regular fa-heart " data-id="${product.id}"></i>
-
          <span class="discountPercentage">${product.discount_percentage}</span>
-
-         <img src="${product.image_link}" alt="${name}">
+         
+         <div class="imgContainer">
+            <img src="${product.image_link}" alt="${product.name}">
+         </div>
 
          <div class="card-body">
+            <p class="productBrand">${brand}</p>
+            <p id="productName" class="productName">${name}</p>
 
-            <p class="productBrand" style="text-transform: uppercase;font-weight: bold;margin-top:-15px;">${product.brand}</p>
+           <div class="price">
+            <span class="productPrice">$. ${product.price}</span>
+            <span class="actualPrice"> $.${product.actual_price}</span>
+           </div>
 
-            <p id="productName" class="productName text-primary font-monospace fs-6" style="margin-top:-15px">${name}</p>
-
-           <div class="price" style="margin-top: -20px;">
-            <span class="productPrice fs-6 text-secondary me-2 fs-4">$. ${product.price}</span>
-
-            <span class="actualPrice fs-6 text-danger text-decoration-line-through"> $.${product.actual_price}</span>
-
-            </div>
-            <button class="cartBtn">Add to cart</button>
-
+           <button class="cartBtn">Add to cart</button>
          </div>
       </div>`;
    });
@@ -60,25 +64,29 @@ async function bronzerCardsData() {
    const data = await res.json();
    let output = "";
    data.forEach((product) => {
-      const name = product.name.length == 15 ? product.name : product.name + "...";
+      const maxLength = 10;
+      let name = product.name;
+      if (name.length > maxLength) {
+         name = name.substring(0, maxLength) + '...';
+      }
+
       output += `
       <div class="card">
         <i class="favHeart fa-regular fa-heart " data-id="${product.id}"></i>
          <span class="discountPercentage">30% OFF</span>
-         <img src="${product.image_link}" alt="${product.name} ">
+         <div class="imgContainer">
+            <img src="${product.image_link}" alt="${product.name} ">
+         </div>
          <div class="card-body">
 
-            <p class="productBrand" style="text-transform: uppercase;font-weight: bold;margin-top:-10px;">${product.brand} </p>
+            <p class="productBrand">${product.brand}</p>
+            <p id="productName" class="productName">${name}</p>
 
-            <p id="productName" class="productName text-primary font-monospace fs-6" style="margin-top:-15px">
-               ${name}
-            </p>
-
-            <div class="price" style="margin-top: -20px;">
-               <span class="productPrice fs-4 text-secondary me-2 fs-4">$.${product.price}</span>
-
-               <span class="actualPrice fs-5 text-danger text-decoration-line-through">$. 25.00</span>
+            <div class="price">
+               <span class="productPrice">$.${product.price}</span>
+               <span class="actualPrice">$. 25.00</span>
             </div>
+
             <button class="cartBtn">Add to cart</button>
          </div>
       </div>`
@@ -95,21 +103,29 @@ async function eyelinerFetch() {
    const data = await res.json();
    let output = "";
    data.forEach((product) => {
-      const name = product.name.length == 15 ? product.name : product.name + "...";
+      const maxLength = 10;
+      let name = product.name;
+      if (name.length > maxLength) {
+         name = name.substring(0, maxLength) + '...';
+      }
       output += `
         <div class="card">
         <i class="favHeart fa-regular fa-heart " data-id="${product.id}"></i>
          <span class="discountPercentage">35% OFF</span>
-         <img src="${product.image_link}" alt="${name}">
+
+          <div class="imgContainer">
+            <img src="${product.image_link}" alt="${product.name}">
+         </div>
+         
          <div class="card-body">
-            <p class="productBrand" style="text-transform: uppercase;font-weight: bold;margin-top:-15px;">${product.brand}</p>
+            <p class="productBrand">${product.brand}</p>
+            <p id="productName" class="productName">${name}</p>
 
-            <p id="productName" class="productName text-primary font-monospace fs-6" style="margin-top:-15px">${product.name}</p>
-
-           <div class="price" style="margin-top: -20px;">
-            <span class="productPrice fs-4 text-secondary me-2 fs-4">$. ${product.price}</span>
-            <span class="actualPrice fs-5 text-danger text-decoration-line-through"> $. 15.0</span>
+           <div class="price">
+            <span class="productPrice">$. ${product.price}</span>
+            <span class="actualPrice"> $. 15.00</span>
            </div>
+
            <button class="cartBtn">Add to cart</button>
          </div>
       </div>`;
