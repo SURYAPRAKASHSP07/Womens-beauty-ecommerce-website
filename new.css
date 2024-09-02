@@ -1,68 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@400..700&family=Noto+Color+Emoji&family=Pacifico&family=Playfair+Display:wght@400..900&display=swap');
 
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: "Cardo", serif;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
-body{
-    height: 100vh;
+body {
     width: 100%;
+    height: 100vh;
 }
-.navbar{
+
+.navbar {
     height: 50px;
     background-color: rgba(127, 50, 95, 0.907);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
     .logo {
-            color: white;
-            line-height: 50px;
-            font-size: 25px;
-            font-weight: bold;
-            letter-spacing: 0.5px;
-            text-transform: capitalize;
-            margin: 0px 15px;
-            cursor: pointer;
-            position: relative;
-            top: -22px;
-            left: 45px;
+        color: white;
+        line-height: 50px;
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        text-transform: capitalize;
+        margin: 0px 15px;
+        cursor: pointer;
+        position: relative;
+        top: -22px;
+        left: 45px;
 
-            .logoImg{
-                height: 35px;
-                position: absolute;
-                top: 8px;
-                bottom: 12px;
-                left : -40px; 
-                border-radius:10px;
-            }
+        .logoImg {
+            height: 35px;
+            position: absolute;
+            top: 8px;
+            bottom: 12px;
+            left: -40px;
+            border-radius: 10px;
         }
+    }
 
     ul li {
-            display: inline;
-            line-height: 50px;
-            padding: 5px 10px;
-            margin: 5px;
-            position: relative;
-            bottom: 8px;
-            border-radius: 5px;
-            color: white;
-            font-size: 18px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: 0.2s linear;
-        }
-     ul li:hover {
-            background-color: white;
-            color: rgba(127, 50, 95, 0.907);
-        }
-    }
-    .navContainer span:nth-child(even){
-        display: none;
+        display: inline;
+        line-height: 50px;
+        padding: 5px 10px;
+        margin: 5px;
+        position: relative;
+        bottom: 8px;
+        border-radius: 5px;
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.2s linear;
     }
 
+    ul li:hover {
+        background-color: white;
+        color: rgba(127, 50, 95, 0.907);
+    }
+}
+
+.navContainer span:nth-child(even) {
+    display: none;
+}
+
 @media (max-width: 678px) {
-    .navbar ul{
+    .navbar ul {
         position: absolute;
         top: 50px;
         left: -380px;
@@ -73,80 +81,86 @@ body{
         cursor: pointer;
         z-index: 10;
     }
-    .navbar ul.active{
+
+    .navbar ul.active {
         left: 0px;
     }
-   .navbar ul li{
-    display: block;
-    color: rgba(127, 50, 95, 0.907);
-    text-align: center;
-    font-weight: 600;
-    bottom: 0;
-    position: relative;
-    left: -15px;
-   }
 
-   .navbar ul li:hover {
+    .navbar ul li {
+        display: block;
+        color: rgba(127, 50, 95, 0.907);
+        text-align: center;
+        font-weight: 600;
+        bottom: 0;
+        position: relative;
+        left: -15px;
+    }
+
+    .navbar ul li:hover {
         background-color: rgba(127, 50, 95, 0.907);
         color: white;
-   }
+    }
 
-   .navContainer{
-    height: 35px;
-    width: 45px;
-    top: 7px;
-    right: 12px;
-    background-color: white;
-    position: absolute;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.navContainer span:nth-child(odd){
-    height: 4px;
-    width: 37px;
-    background-color: rgba(127, 50, 95, 0.907);
-    position: relative;
-    display: block;
-    margin: 5px;
-    top: 0px;
-    left: -1px;
-    padding: 1px;
-    border-radius: 10px;
-}
-.navContainer span:nth-child(even){
-    height: 4px;
-    width: 20px;
-    color: rgba(127, 50, 95, 0.907);
-    font-weight: bold;
-    font-size: 13px;
-    position: relative;
-    display: block;
-    margin: 7px 0px;
-    top: -10px;
-    left: 3px;
-    padding: 2px;
-    border-radius: 10px;
+    .navContainer {
+        height: 35px;
+        width: 45px;
+        top: 7px;
+        right: 12px;
+        background-color: white;
+        position: absolute;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .navContainer span:nth-child(odd) {
+        height: 4px;
+        width: 37px;
+        background-color: rgba(127, 50, 95, 0.907);
+        position: relative;
+        display: block;
+        margin: 5px;
+        top: 0px;
+        left: -1px;
+        padding: 1px;
+        border-radius: 10px;
+    }
+
+    .navContainer span:nth-child(even) {
+        height: 4px;
+        width: 20px;
+        color: rgba(127, 50, 95, 0.907);
+        font-weight: bold;
+        font-size: 13px;
+        position: relative;
+        display: block;
+        margin: 7px 0px;
+        top: -10px;
+        left: 3px;
+        padding: 2px;
+        border-radius: 10px;
+    }
+
+    .navContainer span.bar.one {
+        transform: rotate(45deg);
+        top: 10px;
+        z-index: 2;
+        transition: 0.5s ease-in-out;
+    }
+
+    .navContainer span.bar.two {
+        display: none;
+        transition: 0.5s ease-in-out;
+    }
+
+    .navContainer span.bar.three {
+        transform: rotate(-45deg);
+        z-index: 3;
+        bottom: 50px;
+        transition: 0.5s ease-in-out;
+    }
 }
 
-.navContainer span.bar.one{
-    transform: rotate(45deg);
-    top: 10px;
-    z-index: 2;
-    transition: 0.5s ease-in-out;
-}
-.navContainer span.bar.two{
-    display: none;
-    transition: 0.5s ease-in-out;
-}
-.navContainer span.bar.three{
-   transform: rotate(-45deg);
-   z-index: 3;
-   bottom: 50px;
-   transition: 0.5s ease-in-out;
-}
-}
-
-.flexBox{
+.flexBox {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -155,7 +169,7 @@ body{
     margin: 10px;
 }
 
-.flexBox .card{
+.flexBox .card {
     height: 310px;
     width: 200px;
     padding: 5px;
@@ -165,93 +179,131 @@ body{
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
-.flexBox .card .card-body .productBrand{
-    font-weight: bold;
-    padding: 0px;
-}
-.flexBox .card .card-body .productName{
-   color: blue;
-   margin-top: -15px;
-}
-
-.flexBox .card .card-body .price{
+.flexBox .card .card-body {
     margin-top: -15px;
 }
-.flexBox .card .card-body .price .productPrice{
-   color: green;
-   font-size: 20px;
-}
-.flexBox .card .card-body .price  .actualPrice{
-   color: red;
-   text-decoration: line-through;
-   margin-top: -15px;
+
+.flexBox .card .card-body .productBrand {
+    font-weight: bold;
+    padding: 0px;
+    white-space: nowrap;
+    left: -15px;
+    position: relative;
 }
 
-.flexBox .card .imgContainer{
+.flexBox .card .card-body .productName {
+    color: blue;
+    margin-top: -15px;
+    white-space: nowrap;
+    left: -15px;
+    position: relative;
+}
+
+.flexBox .card .card-body .price {
+    margin-top: -15px;
+    left: -15px;
+    position: relative;
+}
+
+.flexBox .card .card-body .price .productPrice {
+    color: green;
+    font-size: 20px;
+}
+
+.flexBox .card .card-body .price .actualPrice {
+    color: red;
+    text-decoration: line-through;
+    margin-top: -15px;
+}
+
+.flexBox .card .card-body .reviews {
+    display: flex;
+    margin-bottom: -20px;
+    left: -15px;
+    position: relative;
+    top: -6px;
+    white-space: nowrap;
+}
+
+.flexBox .card .card-body .reviews .rating {
+    font-size: 25px;
+    color: yellow;
+}
+
+.flexBox .card .card-body .reviews span {
+    top: 5px;
+    position: relative;
+}
+
+
+
+.flexBox .card .imgContainer {
     height: 150px;
     width: 200px;
     padding: 5px;
 }
 
-.flexBox .card .imgContainer img{
+.flexBox .card .imgContainer img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-.flexBox .card .imgContainer  img:hover{
-        transform: scale(1.02);
-        transition: 0.2s ease-in-out;
+
+.flexBox .card .imgContainer img:hover {
+    transform: scale(1.04);
+    transition: 0.2s ease-in-out;
 }
 
-.flexBox .card .card-body button{
-        display: block;
-        margin: 7px auto;
-        border: 2px solid rgba(127, 50, 95, 0.907);
-        border-radius: 8px;
-        padding: 5px 7px;
-        color: white;
-        background-color: rgba(127, 50, 95, 0.907);
-        position: relative;
-        z-index: 2;
-        font-weight: 400;
-        transition: 0.3s linear;
+.flexBox .card .card-body button {
+    display: block;
+    margin: 7px auto;
+    border: 2px solid rgba(127, 50, 95, 0.907);
+    border-radius: 8px;
+    padding: 5px 7px;
+    color: white;
+    background-color: rgba(127, 50, 95, 0.907);
+    position: relative;
+    top: -10px;
+    z-index: 2;
+    font-weight: 400;
+    transition: 0.3s linear;
 }
 
-.flexBox .card .card-body button::after{
-        content: "";
-        height: 100%;
-        width: 0%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        background: white;
-        border-radius: 8px;
-        transition: 0.3s linear;
+.flexBox .card .card-body button::after {
+    content: "";
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: white;
+    border-radius: 8px;
+    transition: 0.3s linear;
 }
 
-.flexBox .card .card-body button:hover{
-        color: rgba(127, 50, 95, 0.907);
-        outline: 1px solid rgba(127, 50, 95, 0.907);
+.flexBox .card .card-body button:hover {
+    color: rgba(127, 50, 95, 0.907);
+    outline: 1px solid rgba(127, 50, 95, 0.907);
 }
 
-.flexBox .card .card-body button:hover::after{
-        width: 100%;
-        z-index: -2;
+.flexBox .card .card-body button:hover::after {
+    width: 100%;
+    z-index: -2;
 }
 
-.flexBox .card .discountPercentage{
-        background-color: yellow;
-        padding: 5px 40px;
-        font-weight: bold;
-        font-size: 13px;
-        position: absolute;
-        transform: rotate(45deg);
-        top: 14px;
-        right: -40px;
-        z-index: 1;
+.flexBox .card .discountPercentage {
+    background-color: yellow;
+    padding: 5px 40px;
+    font-weight: bold;
+    font-size: 13px;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 14px;
+    right: -40px;
+    z-index: 1;
 }
 
-.favHeart{
+.favHeart {
     position: absolute;
     z-index: 2;
     background-color: white;
@@ -262,12 +314,13 @@ body{
     border-radius: 50%;
     transition: 0.2s linear;
 }
-.favHeart.added{
+
+.favHeart.added {
     background-color: rgba(127, 50, 95, 0.907);
     color: white;
 }
 
-#bronzerCards.flexBox{
+#bronzerCards.flexBox {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
@@ -279,7 +332,7 @@ body{
     position: relative;
     gap: 10px;
 
-    .card{
+    .card {
         margin: 10px;
         height: 310px;
         min-width: 200px;
@@ -288,115 +341,154 @@ body{
         box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
         cursor: pointer;
 
-        .imgContainer{
+        .imgContainer {
             height: 150px;
             width: 200px;
             padding: 5px;
 
-        img{
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
-         img:hover{
-            transform: scale(1.02);
-            transition: 0.2s ease-in-out;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            img:hover {
+                transform: scale(1.02);
+                transition: 0.2s ease-in-out;
+            }
         }
     }
-}
 
 }
 
-#bronzerCards::-webkit-scrollbar{
-        width: 0px;
-    }
+#bronzerCards::-webkit-scrollbar {
+    width: 0px;
+}
 
 
 @media (max-width: 425px) {
-.flexBox{
-        .card{
+    .flexBox {
+        .card {
             height: 260px;
             width: 130px;
         }
-        .card .imgContainer{
+
+        .card .imgContainer {
             height: 125px;
             width: 130px;
         }
-        .card .imgContainer img{
+
+        .card .imgContainer img {
             height: 100%;
             width: 100%;
             object-fit: cover;
         }
-}
+    }
 
-.flexBox .card .card-body{
-    margin-top: -20px;
-}
-    
-.flexBox .card .card-body .productBrand{
-    font-weight: bold;
-    padding: 0px;
-    font-size: 12px;
-}
-.flexBox .card .card-body .productName{
-   color: blue;
-   margin-top: -15px;
-   font-size: 12px;
-}
+    .flexBox .card .card-body {
+        margin-top: -15px;
+    }
 
-.flexBox .card .card-body .price{
-    margin-top: -15px;
-    margin-right: 10px;
-    /* display: block; */
-}
-.flexBox .card .card-body .price .productPrice{
-   color: green;
-   font-size: 15px;
-   display: block;
-}
-.flexBox .card .card-body .price  .actualPrice{
-   color: red;
-   font-size: 13px;
-   text-decoration: line-through;
-   margin-top: -15px;
-}
-.flexBox .card .card-body button{
-    padding: 5px 10px;
-    font-size: 12px;
-}
-.flexBox .card .favHeart{
-    font-size: 15px;
-    padding: 5px;
-}
-.flexBox .card .discountPercentage{
+    .flexBox .card .card-body .productBrand {
+        white-space: nowrap;
+        padding: 0px;
+        font-size: 15px;
+        left: -15px;
+        position: relative;
+    }
+
+    .flexBox .card .card-body .productName {
+        white-space: nowrap;
+        color: blue;
+        margin-top: -15px;
+        font-size: 13px;
+        left: -15px;
+        position: relative;
+    }
+
+    .flexBox .card .card-body .price {
+        /* margin-top: -15px; */
+        display: flex;
+
+    }
+
+    .flexBox .card .card-body .price .productPrice {
+        color: green;
+        font-size: 18px;
+        white-space: nowrap;
+    }
+
+    .flexBox .card .card-body .price .actualPrice {
+        color: red;
+        font-size: 13px;
+        text-decoration: line-through;
+        white-space: nowrap;
+        position: relative;
+        top: 20px;
+        left: 5px;
+    }
+
+    .flexBox .card .card-body button {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .flexBox .card .favHeart {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .flexBox .card .discountPercentage {
         padding: 5px 40px;
         top: 5px;
         font-size: 9px;
-}
+        font-weight: bold;
+    }
 
-#bronzerCards.flexBox .card{
-    width: 150px;
-}
-#bronzerCards.flexBox .card{
-        height: 270px;
+    #bronzerCards.flexBox .card {
+        width: 150px;
+    }
+
+    .flexBox .card .card-body .reviews {
+        display: flex;
+        margin-bottom: -20px;
+        left: -15px;
+        position: relative;
+        top: -6px;
+        white-space: nowrap;
+    }
+
+    .flexBox .card .card-body .reviews .rating {
+        font-size: 15px;
+        color: yellow;
+    }
+
+    .flexBox .card .card-body .reviews span {
+        top: 2px;
+        font-size: 12px;
+        position: relative;
+    }
+
+    #bronzerCards.flexBox .card {
+        height: 280px;
         width: 130px;
 
-        .imgContainer{
+        .imgContainer {
             height: 140px;
             width: 200px;
             padding: 5px;
 
-        img{
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
         }
     }
 }
-}
 
 
-.favHeart{
+.favHeart {
     position: absolute;
     z-index: 2;
     background-color: white;
@@ -407,7 +499,8 @@ body{
     border-radius: 50%;
     transition: 0.2s linear;
 }
-.favHeart.added{
+
+.favHeart.added {
     background-color: rgba(127, 50, 95, 0.907);
     color: white;
 }
