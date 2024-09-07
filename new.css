@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@400..700&family=Noto+Color+Emoji&family=Pacifico&family=Playfair+Display:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: "Cardo", serif;
-    font-weight: 400;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
     font-style: normal;
 
 }
@@ -16,148 +17,215 @@ body {
 }
 
 .navbar {
-    height: 50px;
-    background-color: rgba(127, 50, 95, 0.907);
     display: flex;
-    justify-content: center;
-
-    .logo {
-        color: white;
-        line-height: 50px;
-        font-size: 25px;
-        font-weight: bold;
-        letter-spacing: 0.5px;
-        text-transform: capitalize;
-        margin: 0px 15px;
-        cursor: pointer;
-        position: relative;
-        top: -22px;
-        left: 45px;
-
-        .logoImg {
-            height: 35px;
-            position: absolute;
-            top: 8px;
-            bottom: 12px;
-            left: -40px;
-            border-radius: 10px;
-        }
-    }
-
-    ul li {
-        display: inline;
-        line-height: 50px;
-        padding: 5px 10px;
-        margin: 5px;
-        position: relative;
-        bottom: 8px;
-        border-radius: 5px;
-        color: white;
-        font-size: 18px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: 0.2s linear;
-    }
-
-    ul li:hover {
-        background-color: white;
-        color: rgba(127, 50, 95, 0.907);
-    }
+    justify-content: space-between;
+    height: 70px;
+    width: 100vw;
+    background-color: rgba(127, 50, 95, 0.907);
+    cursor: pointer;
+    position: fixed;
 }
 
-.navContainer span:nth-child(even) {
+.navbar .navStart {
+    position: relative;
+    top: -15px;
+    display: flex;
+    gap: 50px;
+    margin-left: 50px;
+}
+
+.navbar .navStart .search {
+    line-height: 70px;
+    color: white;
+    padding: 0px 10px;
+    font-size: 20px;
+}
+
+.navbar .navContainer {
+    line-height: 70px;
+    color: white;
+    font-size: 20px;
+}
+
+.navbar .bandn {
+    margin-top: -10px;
+    display: flex;
+}
+
+.navbar .bandn img {
+    line-height: 70px;
+    color: white;
+    height: 70px;
+    font-size: 20px;
+    border-radius: 60px;
+    padding: 5px 0px;
+}
+
+.navbar .bandn p {
+    line-height: 70px;
+    color: white;
+    position: relative;
+    left: 10px;
+    font-size: 20px;
+    border-radius: 60px;
+    padding: 5px 0px;
+}
+
+.navbar .navEnd {
+    position: relative;
+    top: -15px;
+    display: flex;
+    gap: 50px;
+    margin-right: 60px;
+}
+
+.navbar .navEnd .favIcon {
+    line-height: 70px;
+    color: white;
+    font-size: 20px;
+}
+
+.navbar .navEnd .cartBag {
+    line-height: 70px;
+    color: white;
+    font-size: 20px;
+}
+
+
+.navContainer {
+    height: 45px;
+    width: 55px;
+    top: 7px;
+    left: 10px;
+    margin: 5px 0px;
+    background-color: white;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navContainer span:nth-child(odd) {
+    height: 4px;
+    width: 47px;
+    background-color: rgba(127, 50, 95, 0.907);
+    position: relative;
+    display: block;
+    margin: 5px;
+    top: 2px;
+    left: -1px;
+    padding: 1px;
+    border-radius: 10px;
+}
+
+.navContainer label:nth-child(even) {
+    height: 4px;
+    width: 30px;
+    color: rgba(127, 50, 95, 0.907);
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    display: block;
+    margin: 7px 0px;
+    top: -33px;
+    left: 5px;
+    padding: 5px 0px;
+    border-radius: 10px;
+}
+
+/* .navContainer span.bar.one {
+    transform: rotate(45deg);
+    top: 15px;
+    z-index: 2;
+    transition: 0.2s ease-in-out;
+} */
+
+.navContainer label.bar.two {
+    display: none;
+    transition: 0.2s ease-in-out;
+}
+
+/* .navContainer span.bar.three {
+    transform: rotate(-45deg);
+    z-index: 3;
+    top: 5px;
+    transition: 0.2s ease-in-out;
+} */
+
+nav {
+    position: absolute;
+    top: 70px;
+    height: 100vh;
+    width: 40%;
+    cursor: pointer;
+}
+
+
+nav label {
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+}
+
+nav ul li i {
+    float: right;
+    color: white;
+    position: relative;
+    top: 10px;
+}
+
+nav ul {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    list-style-type: none;
     display: none;
 }
 
-@media (max-width: 678px) {
-    .navbar ul {
-        position: absolute;
-        top: 50px;
-        left: -380px;
-        height: 100vh;
-        width: 50%;
-        background-color: white;
-        transition: 1s linear;
-        cursor: pointer;
-        z-index: 10;
-    }
+[id^=btn]:checked+ul {
+    display: block;
+    background-color: rgba(127, 50, 95, 0.907);
+    transition: 2s linear;
+    height: 100vh;
+    z-index: 10;
+}
 
-    .navbar ul.active {
-        left: 0px;
-    }
+nav ul li {
+    line-height: 40px;
+    padding: 0px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.363);
+}
 
-    .navbar ul li {
-        display: block;
-        color: rgba(127, 50, 95, 0.907);
-        text-align: center;
-        font-weight: 600;
-        bottom: 0;
-        position: relative;
-        left: -15px;
-    }
+nav ul li:last-child {
+    border-bottom: 0px solid rgba(255, 255, 255, 0.363);
+}
 
-    .navbar ul li:hover {
-        background-color: rgba(127, 50, 95, 0.907);
-        color: white;
-    }
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
 
-    .navContainer {
-        height: 35px;
-        width: 45px;
-        top: 7px;
-        right: 12px;
-        background-color: white;
-        position: absolute;
-        border-radius: 5px;
-        cursor: pointer;
-    }
+nav ul ul {
+    position: static;
+}
 
-    .navContainer span:nth-child(odd) {
-        height: 4px;
-        width: 37px;
-        background-color: rgba(127, 50, 95, 0.907);
-        position: relative;
-        display: block;
-        margin: 5px;
-        top: 0px;
-        left: -1px;
-        padding: 1px;
-        border-radius: 10px;
-    }
+nav ul ul li {
+    padding-left: 10px;
+    border-bottom: none;
+}
 
-    .navContainer span:nth-child(even) {
-        height: 4px;
-        width: 20px;
-        color: rgba(127, 50, 95, 0.907);
-        font-weight: bold;
-        font-size: 13px;
-        position: relative;
-        display: block;
-        margin: 7px 0px;
-        top: -10px;
-        left: 3px;
-        padding: 2px;
-        border-radius: 10px;
-    }
+nav ul li a:hover {
+    color: rgba(255, 255, 255, 0.668);
+    transition: 0.4s linear;
+}
 
-    .navContainer span.bar.one {
-        transform: rotate(45deg);
-        top: 10px;
-        z-index: 2;
-        transition: 0.5s ease-in-out;
-    }
+.navbar ul li:hover {
+    color: rgba(255, 255, 255, 0.457);
+    transition: 0.4s linear;
+}
 
-    .navContainer span.bar.two {
-        display: none;
-        transition: 0.5s ease-in-out;
-    }
-
-    .navContainer span.bar.three {
-        transform: rotate(-45deg);
-        z-index: 3;
-        bottom: 50px;
-        transition: 0.5s ease-in-out;
-    }
+input {
+    display: none;
 }
 
 .flexBox {
@@ -185,6 +253,7 @@ body {
 
 .flexBox .card .card-body .productBrand {
     font-weight: bold;
+    text-transform: uppercase;
     padding: 0px;
     white-space: nowrap;
     left: -15px;
@@ -218,7 +287,7 @@ body {
 
 .flexBox .card .card-body .reviews {
     display: flex;
-    margin-bottom: -20px;
+    margin-bottom: -15px;
     left: -15px;
     position: relative;
     top: -6px;
@@ -226,8 +295,8 @@ body {
 }
 
 .flexBox .card .card-body .reviews .rating {
-    font-size: 25px;
-    color: yellow;
+    font-size: 20px;
+    color: green;
 }
 
 .flexBox .card .card-body .reviews span {
@@ -334,7 +403,7 @@ body {
 
     .card {
         margin: 10px;
-        height: 310px;
+        height: 315px;
         min-width: 200px;
         padding: 10px;
         border-radius: 5px;
@@ -430,7 +499,7 @@ body {
 
     .flexBox .card .card-body button {
         padding: 5px 10px;
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .flexBox .card .favHeart {
@@ -460,23 +529,22 @@ body {
 
     .flexBox .card .card-body .reviews .rating {
         font-size: 15px;
-        color: yellow;
+        color: green;
     }
 
     .flexBox .card .card-body .reviews span {
         top: 2px;
-        font-size: 12px;
+        font-size: 11px;
         position: relative;
     }
 
     #bronzerCards.flexBox .card {
-        height: 280px;
+        height: 285px;
         width: 130px;
 
         .imgContainer {
             height: 140px;
             width: 200px;
-            padding: 5px;
 
             img {
                 height: 100%;
