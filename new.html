@@ -14,6 +14,190 @@
 
 <body style="background-color: #ffffff;">
    <div class="navbar">
+      <div class="navStart">
+         <div id="navContainer" class="navContainer">
+            <span id="barOne" class="bar"></span>
+            <label for="btn">Menu</label>
+            <span id="barThree" class="bar"></span>
+         </div>
+         <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+      </div>
+
+      <nav>
+         <input type="checkbox" id="btn">
+         <ul id="ul">
+            <label class="btnclose" for="btn"></label>
+            <li class="Home"><a href="#">Home</a></li>
+            <li class="product">
+               <label for="btn-1">Products</label>
+               <i class="fa-solid fa-angle-down"></i>
+               <input type="checkbox" id="btn-1">
+
+               <ul class="dropdown">
+                  <li class="BestSellers"><a href="#">Best Sellers</a></li>
+                  <li><label for="btn-2">Eyes</label>
+                     <i class="fa-solid fa-angle-down"></i>
+                     <input type="checkbox" id="btn-2">
+                     <ul class="dropdown">
+                        <li class="Eyebrow"><a href="#">Eyebrow</a></li>
+                        <li class="Eyeliner"><a href="#">Eyeliner</a></li>
+                        <li class="Eyeshadow"><a href="#">Eyeshadow</a></li>
+                        <li class="Mascara"><a href="#">Mascara</a></li>
+                     </ul>
+                  </li>
+                  <li><label for="btn-3">Lips</label>
+                     <i class="fa-solid fa-angle-down"></i>
+                     <input type="checkbox" id="btn-3">
+                     <ul class="dropdown">
+                        <li class="Lipliner"><a href="#">Lipliner</a></li>
+                        <li class="Lipstick"><a href="#">Lipstick</a></li>
+                     </ul>
+                  </li>
+                  <li><label for="btn-4">Face</label>
+                     <i class="fa-solid fa-angle-down"></i>
+                     <input type="checkbox" id="btn-4">
+                     <ul class="dropdown">
+                        <li class="Foundation"><a href="#">Foundation</a></li>
+                        <li class="Blush"><a href="#">Blush</a></li>
+                        <li class="Bronzer"><a href="#">Bronzer</a></li>
+                     </ul>
+                  </li>
+                  <li class="NailPolish"><a href="#">Nail Polish</a></li>
+                  <li class="GiftSets"><a href="#">Gift Sets</a></li>
+               </ul>
+            </li>
+            <li class="Blobs"><a href="#">Blobs</a></li>
+            <li class="AboutUs"><a href="#">About Us</a></li>
+            <li class="ContactUs"><a href="#">Contact Us</a></li>
+         </ul>
+      </nav>
+
+
+
+      <div class="bandn">
+         <img class="logoImg" src="beautiful-woman.webp" alt="logoImg">
+         <p class="logo">Glow Rich</p>
+      </div>
+
+      <div class="navEnd">
+         <div class="favIcon"><i class=" fa-solid fa-heart fs-4 p-1"></i></div>
+         <div class="cartBag"><i class="fa-solid fa-bag-shopping fs-4 p-1"></i></div>
+      </div>
+   </div>
+
+   <!-- header carousel-->
+   <div class="carousel silde" id="carouselExample" data-bs-ride="carousel">
+      <div class="carousel-inner">
+         <div class="carousel-item">
+            <img src="b1_elite-header-exclusive_web.webp" class="d-block w-100">
+         </div>
+         <div class="carousel-item">
+            <img src="b2_cosrx-_skincare_2596x836.webp" class="d-block w-100">
+         </div>
+         <div class="carousel-item">
+            <img src="b7_pu_webhp.webp" class="d-block w-100">
+         </div>
+         <div class="carousel-item">
+            <img src="b3_global_store_skinmakeup_and_hair_copy_1_2596x836.webp" class="d-block w-100">
+         </div>
+         <div class="carousel-item active">
+            <img src="b4_header_web-22.webp" class="d-block w-100">
+         </div>
+         <div class="carousel-item">
+            <img src="b5_lakme_hul_makeup_new_2596x836.webp" class="d-block w-100">
+         </div>
+         <div class="carousel-item">
+            <img src="b6_minimalist_spf_50_skin_2596x836.webp" class="d-block w-100">
+         </div>
+      </div>
+
+      <button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExample">
+         <span class="carousel-control-prev-icon"></span>
+         <span class="sr-only"></span>
+      </button>
+
+      <button type="button" class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExample">
+         <span class="carousel-control-next-icon"></span>
+         <span class="sr-only"></span>
+      </button>
+   </div>
+   <!-- header carousel-->
+
+   <img src="1723012324_aclt_combos-of-the-day-web.webp" class="w-100">
+
+   <div class="bg-dark text-light text-center p-3 my-3 fw-bolder fs-2 fst-italic">Best selling products</div>
+
+   <!-- Product container 1 -->
+   <div id="productContainer" class="flexBox">
+   </div>
+   <!-- Product container 1 -->
+
+   <img src="1722928818_saleislive_web-4.webp" class="w-100">
+
+   <div class="bg-dark text-light text-center p-3 my-3 fw-bolder fs-2 fst-italic">Bronzer products</div>
+
+   <!-- Product container 2 -->
+   <div id="bronzerCards" class="Bronzer-container flexBox">
+   </div>
+   <!-- Product container 2 -->
+
+   <div class="carousel silde" id="carouselExample2" data-bs-ride="carousel">
+      <div class="carousel-inner">
+         <div class="carousel-item active">
+            <img src="banner-3 free_niacinamide-serum_on-449_web.webp" class="d-block w-100">
+         </div>
+         <div class="carousel-item">
+            <img src="banner-4 web.webp" class="d-block w-100">
+         </div>
+      </div>
+      <button type="button" class="carousel-control-prev" data-bs-target="#carouselExample2" data-bs-slide="prev">
+         <span class="carousel-control-prev-icon"></span>
+         <span class=""></span>
+      </button>
+      <button type="button" class="carousel-control-next" data-bs-target="#carouselExample2" data-bs-slide="next">
+         <span class="carousel-control-next-icon"></span>
+      </button>
+   </div>
+
+   <!-- Product container 3-->
+   <div id="eyelinerContainer" class="flexBox">
+   </div>
+   <!-- Product container 3-->
+
+
+
+
+   <script src="js/bootstrap.min.js"></script>
+   <script src="new.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ForHer | Buy Beauty & Cosmetic Products online in India at best price</title>
+   <link rel="stylesheet" href="new.css">
+   <link rel="icon" href="beautiful-woman.webp">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<body style="background-color: #ffffff;">
+   <div class="navbar">
       <p class="logo" style="margin-top: 13px;"><img class="logoImg" src="beautiful-woman.webp" alt="logoImg">ForHers
       </p>
       <ul id="ul">
@@ -119,3 +303,4 @@
 </body>
 
 </html>
+ -->
